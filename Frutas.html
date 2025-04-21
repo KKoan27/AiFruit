@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frutaria Online - Nossas Frutas Frescas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Frutas.css">
+  <link rel="stylesheet" href="Legumes.css">
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Frut<span>Online</span></h1>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="Frutas.html" class="active">Frutas</a></li>
+          <li><a href="Verduras.html">Verduras</a></li>
+          <li><a href="Legumes.html">Legumes</a></li>
+          <li><a href="Ofertas.html">Ofertas</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="login.html"><i class="fas fa-user"></i></a>
+        <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner de Frutas -->
+  <section class="page-banner">
+    <div class="container">
+      <h2>Frutas Frescas</h2>
+      <p>Seleção premium direto do produtor</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <!-- Filtros -->
+    <section class="filters">
+      <div class="filter-group">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+          <option value="todas">Todas</option>
+          <option value="citricas">Cítricas</option>
+          <option value="tropicais">Tropicais</option>
+          <option value="vermelhas">Vermelhas</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="preco">Preço:</label>
+        <select id="preco">
+          <option value="todos">Todos</option>
+          <option value="barato">Até R$ 5,00</option>
+          <option value="medio">R$ 5,00 - R$ 10,00</option>
+          <option value="caro">Acima de R$ 10,00</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="ordenar">Ordenar por:</label>
+        <select id="ordenar">
+          <option value="popular">Mais populares</option>
+          <option value="preco-asc">Preço: menor para maior</option>
+          <option value="preco-desc">Preço: maior para menor</option>
+          <option value="nome">Ordem alfabética</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Grade de Produtos -->
+    <section class="products-section">
+      <div class="products-grid">
+        <!-- Produto 1 -->
+        <div class="product-card">
+          <div class="product-badge">Orgânico</div>
+          <img src="https://cdn.pixabay.com/photo/2016/08/05/10/44/apples-1576400_1280.jpg" alt="Maçã Vermelha">
+          <div class="product-info">
+            <h3>Maçã Vermelha</h3>
+            <div class="product-meta">
+              <span class="price">R$ 3,50 <small>/un</small></span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(24)</span>
+              </div>
+            </div>
+            <p class="product-description">Maçãs vermelhas frescas, colhidas diariamente.</p>
+            <div class="product-actions">
+              <button class="btn-cart"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+              <button class="btn-favorite"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card">
+          <div class="product-badge">Oferta</div>
+          <img src="https://cdn.pixabay.com/photo/2017/01/20/15/06/bananas-1995073_1280.jpg" alt="Banana Prata">
+          <div class="product-info">
+            <h3>Banana Prata</h3>
+            <div class="product-meta">
+              <span class="price">R$ 2,00 <small>/dúzia</small></span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(18)</span>
+              </div>
+            </div>
+            <p class="product-description">Bananas maduras no ponto ideal para consumo.</p>
+            <div class="product-actions">
+              <button class="btn-cart"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+              <button class="btn-favorite"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card">
+          <img src="https://cdn.pixabay.com/photo/2016/07/21/12/49/grapes-1534060_1280.jpg" alt="Uvas Roxas">
+          <div class="product-info">
+            <h3>Uvas Roxas</h3>
+            <div class="product-meta">
+              <span class="price">R$ 5,00 <small>/bandeja</small></span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(32)</span>
+              </div>
+            </div>
+            <p class="product-description">Uvas doces e suculentas, sem sementes.</p>
+            <div class="product-actions">
+              <button class="btn-cart"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+              <button class="btn-favorite"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product-card">
+          <div class="product-badge">Novidade</div>
+          <img src="https://cdn.pixabay.com/photo/2018/01/04/14/39/orange-3062134_1280.jpg" alt="Laranja">
+          <div class="product-info">
+            <h3>Laranja Bahia</h3>
+            <div class="product-meta">
+              <span class="price">R$ 4,00 <small>/kg</small></span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                <span>(15)</span>
+              </div>
+            </div>
+            <p class="product-description">Laranjas doces e suculentas, ricas em vitamina C.</p>
+            <div class="product-actions">
+              <button class="btn-cart"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+              <button class="btn-favorite"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mais produtos podem ser adicionados aqui -->
+      </div>
+    </section>
+
+    <!-- Paginação -->
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#"><i class="fas fa-angle-right"></i></a>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-column">
+        <h3>Sobre Nós</h3>
+        <p>Entregamos frutas frescas direto do produtor para sua casa com qualidade garantida.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="Frutas.html">Frutas</a></li>
+          <li><a href="Verduras.html">Verduras</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Rua das Frutas, 123</p>
+        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+        <p><i class="fas fa-envelope"></i> contato@frutonline.com.br</p>
+      </div>
+      <div class="footer-column">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 FrutOnline. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
